@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*
+Theme Name: Fashion Ecommerce Zone
+Author: TheMagnifico52
+Theme URI: https://www.themagnifico.net/products/fashion-ecommerce-wordpress-theme
+Author URI: https://www.themagnifico.net/
+Description: Fashion Ecommerce Zone is a stunning theme that is built using the Bootstrap framework and gives professional websites for fashion stores and clothing brands boutiques, fashion influencers, apparel stores, and more. This is a minimal theme that comes with highly optimized codes working very well on various devices and browsers and gives an outstanding web experience to your users. With SEO-friendly design, getting better ranks in the search engines becomes much easier and this will drag more traffic to your website. This beautiful theme is clean and retina-ready to give a pixel-perfect display of your content and as it is responsive, its layout is going to seamlessly adjust itself across any given screen size. With its testimonial and team sections, you can easily show them why people show confidence in you and introduce your team member. It has a lot of personalization options included. If you feel like adding your twist to the design, you can use them with ease. Thanks to these, you can also use this theme’s layout as a multipurpose theme. Developers have made it translation ready to support various languages. Secure and clean codes also result in a quick loading website with faster page load time. Interactive Call to Action Button (CTA) and animations are also added.
+Version: 2.3.5
+Tested up to: 6.8
+Requires PHP: 7.2
+Requires at least: 5.0
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: fashion-estore
+Text Domain: fashion-ecommerce-zone
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, footer-widgets, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, blog, e-commerce, food-and-drink
+
+Fashion Ecommerce Zone WordPress Theme has been created by TheMagnifico52(themagnifico.net), 2022.
+Fashion Ecommerce Zone WordPress Theme is released under the terms of GNU GPL
+*/
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Jost', sans-serif;
+}
+
+.sidebar h5, span.cart-value, .sticky .entry-title::before, #button, .sidebar input[type="submit"], .sidebar button[type="submit"], .comment-respond input#submit, .post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover, .pro-button a, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .woocommerce-ordering select, .woocommerce-account .woocommerce-MyAccount-navigation ul li, .toggle-nav i, .wp-block-button__link, .sidebar .tagcloud a:hover, a.added_to_cart.wc-forward,.top-info,.slide-btn a, .load hr{
+    background: #e33d3d;
+}
+a,.home_product_cat h4:hover a,.woocommerce-message::before, .woocommerce-info::before,#colophon a:hover, #colophon a:focus {
+    color: #e33d3d;
+}
+.woocommerce-message, .woocommerce-info,.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .wp-block-pullquote{
+    border-color: #e33d3d;
+}
+.social-link i{
+    color: #fff;
+}
+.navbar-brand h1.site-title, p.site-title{
+    font-size: 25px;
+}
+.top-info{
+    border: none;
+}
+a.account-btn {
+    background: #390f0f;
+}
+.pro_search {
+    border: none;
+    background: #f5f5f5;
+}
+.main-navigation .menu > li > a{
+    font-weight: bold;
+}
+.menu_cat i, .menu_cat {
+    background: transparent;
+    padding: 0;
+    color: #000;
+}
+.navigation_header {
+    background: #fff;
+    border: solid 2px #cccccc;
+    border-left: none;
+    border-right: none;
+}
+.home_product_cat h4 a {
+    font-size: 18px;
+    text-transform: none;
+    font-weight: normal;
+}
+.main-navigation .menu > li {
+    font-size: 16px;
+    font-weight: 500;
+}
+#mySidenav.nav {
+    justify-content: flex-end;
+}
+.main-navigation .menu > li > a:hover, #site-navigation .menu ul li a:hover{
+    color: #e33d3d;
+}
+.main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus {
+    background: #e33d3d;
+    color: #fff !important;
+}
+#site-navigation .menu ul li a{
+    color: #000000;
+}
+.main-navigation .menu li.page_item_has_children ul.children {
+    background-color: #e33d3d;
+}
+.slider-inner-box {
+    right: 35%;
+    left: 5%;
+    clip-path: none;
+    background: transparent;
+    padding: 0;
+    text-align: left;
+}
+.slider-inner-box h2 {
+    color: #000;
+    font-size: 50px;
+    text-transform: none;
+    font-weight: 500;
+}
+.slider-border {
+    border-bottom: solid 2px #cccccc;
+}
+.services-box i {
+    font-size: 40px;
+    color: #e33d3d;
+}
+.services-box h4 {
+    font-size: 22px;
+}
+.services-box p {
+    font-size: 15px;
+    color: #75767c;
+}
+.category-inner-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.category-inner-box1 {
+    left: 10%;
+    right: 30%;
+    text-align: left;
+}
+.category-inner-box2 {
+    left: 30%;
+    right: 10%;
+    text-align: right;
+}
+.category-inner-box h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.category-box {
+    position: relative;
+}
+.article-box a:hover, .social-link i:hover{
+    color: #390f0f;
+}
+.sidebar section {
+    padding: 10px;
+}
+a.account-btn:hover{
+    color: #e33d3d;
+    background: #390f0f;
+}
+.sidebar h2.wp-block-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #e33d3d;
+    padding: 15px 10px;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .slider-inner-box {
+        right: 5%;
+        text-align: center;
+    }
+    .slider-inner-box h2{
+        font-size: 20px;
+    }
+    #shop_services {
+        text-align: center;
+    }
+    .category-inner-box2 {
+        left: 20%;
+    }
+    .category-inner-box1 {
+        right: 20%;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 999px){
+    .slider-inner-box h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .main-navigation .sub-menu > li > a, .main-navigation .sub-menu > li > .menu-item-link-return,.main-navigation .menu > li > a{
+        color: #fff !important;
+    }
+    .sidenav .closebtn, .toggle-nav i{
+        background: #e33d3d;
+    }
+    .main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus, .main-navigation .menu > li > a:hover {
+        background: transparent;
+        color: #e33d3d !important;
+    }
+    #site-navigation .menu ul li a{
+        color: #ffffff;
+    }
+    .category-inner-box h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    body.admin-bar .sidenav {
+        margin-top: 46px;
+    }
+}

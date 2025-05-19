@@ -13,11 +13,11 @@
 </head>
 
 <body <?php body_class() ?>>
-    <div id="header_area">
+    <header id="header_area" class="<?= get_theme_mod('faizaan_menu_position'); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="">
+                    <a href="<?= home_url(); ?>">
                         <img src="<?= get_theme_mod('faizaan_logo'); ?>" width="100" alt="">
                     </a>
                 </div>
@@ -29,12 +29,16 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="hero-content text-center p-5">
-        <h1>Welcome to Faizaan Theme</h1>
-        <p>Your one-stop solution for all your WordPress needs.</p>
-        <a href="#" class="btn btn-primary">Get Started</a>
-    </div>
+    </header>
+    <section class="hero-content text-center p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php wp_footer(); ?>
 </body>
 

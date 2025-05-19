@@ -14,7 +14,7 @@ function faizaan_add_css_js_files()
     wp_enqueue_style('bootstrap');
     wp_register_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0');
     wp_enqueue_style('font-awesome');
-    wp_register_style('custom-style', get_template_directory_uri() . '/css/custom.css', array(), '1.0.0');
+    wp_register_style('custom-style', get_template_directory_uri() . '/css/custom.css', array(), '1.0.1');
     wp_enqueue_style('custom-style');
 
     // Add JS files
@@ -70,6 +70,40 @@ function faizaan_customizer_register($wp_customize)
             )
         )
     );
+
+    // Menu Position Options
+    $wp_customize->add_section(
+        'faizaan_menu_position',
+        array(
+            'title' => __('Menu Position', 'faizaan'),
+
+            'description' => __('Customize the menu position of the theme.', 'faizaan'),
+        )
+    );
+    $wp_customize->add_setting(
+        'faizaan_menu_position',
+        array(
+            'default' => 'left',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'sanitize_text_field',
+        )
+    );
+    $wp_customize->add_control(
+        'faizaan_menu_position',
+        array(
+            'label' => __('Menu Position', 'faizaan'),
+            'section' => 'faizaan_header_area',
+            'settings' => 'faizaan_menu_position',
+            'type' => 'radio',
+            'choices' => array(
+                'left' => __('Left', 'faizaan'),
+                'right' => __('Right', 'faizaan'),
+                'center' => __('Center', 'faizaan'),
+            ),
+        )
+    );
+
+
 }
 add_action('customize_register', 'faizaan_customizer_register');
 
